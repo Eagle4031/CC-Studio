@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Groundwork Digital Programs &amp; Recovery Store</title>
+    <meta name="description" content="Downloadable training plans, strength programs, and recovery guides, plus a curated recovery and running gear store. Checkout is a UI preview — no live payments are processed.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled always-solid" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="logo-mark"></span> Groundwork</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#services">Coaching</a></li>
+                <li><a href="index.html#recovery">Recovery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li>
+                    <button id="cartToggle" class="btn btn-outline btn-nav cart-toggle">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        Cart <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="breadcrumb"><a href="index.html">Home</a> / Shop</div>
+            <span class="eyebrow">Store</span>
+            <h1>Digital Programs &amp; Recovery Gear</h1>
+            <p>Everything below is a real product catalog preview. Cart and checkout are UI placeholders — Stripe checkout, taxes, coupons, and order history are the next integration, not live yet.</p>
+        </div>
+    </header>
+
+    <!-- Digital Products -->
+    <section class="section" id="digital">
+        <div class="container">
+            <div id="coaching"></div>
+            <div id="strength"></div>
+            <div class="section-head" style="text-align:left; margin-bottom:36px; max-width:none;">
+                <span class="eyebrow">Digital Products</span>
+                <h2>Training Plans, Programs &amp; Guides</h2>
+            </div>
+            <div class="shop-toolbar">
+                <div class="filter-group" data-scope="digital">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="coaching">Running Plans</button>
+                    <button class="filter-btn" data-filter="strength">Strength</button>
+                    <button class="filter-btn" data-filter="recovery">Recovery &amp; Guides</button>
+                </div>
+                <span class="form-note" style="margin:0;">14 digital products</span>
+            </div>
+            <div class="product-grid">
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><span class="product-badge">Bestseller</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>Marathon Training Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (128)</div>
+                        <p>16-week periodized plan with integrated strength &amp; recovery days.</p>
+                        <div class="product-footer"><span class="product-price">$79</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>Half Marathon Training Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (94)</div>
+                        <p>12-week plan for a strong, uninjured half marathon build.</p>
+                        <div class="product-footer"><span class="product-price">$69</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>10K Training Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (61)</div>
+                        <p>10-week plan bridging aerobic base with race-specific speed.</p>
+                        <div class="product-footer"><span class="product-price">$59</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><span class="product-badge">New</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>5K Training Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (37)</div>
+                        <p>8-week plan for a first or fastest-ever 5K.</p>
+                        <div class="product-footer"><span class="product-price">$49</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>Beginner Runner Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (203)</div>
+                        <p>Couch-to-5K style plan built around injury prevention from day one.</p>
+                        <div class="product-footer"><span class="product-price">$39</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="coaching">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 15s3-2 8-2 8 2 8 2M4 9s3-2 8-2 8 2 8 2"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Training Plan</span>
+                        <h4>Trail Running Plan</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (42)</div>
+                        <p>Elevation-aware plan covering vert, technical terrain, and fueling.</p>
+                        <div class="product-footer"><span class="product-price">$79</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="strength">
+                    <div class="product-thumb"><span class="product-badge">Bestseller</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Strength</span>
+                        <h4>Strength for Runners</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (156)</div>
+                        <p>12-week gym-based program built for durability, not bulk.</p>
+                        <div class="product-footer"><span class="product-price">$69</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="strength">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Strength</span>
+                        <h4>Runner Mobility Program</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (88)</div>
+                        <p>8-week mobility progression targeting hips, ankles, and thoracic rotation.</p>
+                        <div class="product-footer"><span class="product-price">$49</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="strength">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 6.5h11v11h-11z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Strength</span>
+                        <h4>Home / Bodyweight Strength</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.6 (52)</div>
+                        <p>No-gym strength program for runners training on the road.</p>
+                        <div class="product-footer"><span class="product-price">$45</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="recovery">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Guide</span>
+                        <h4>Foam Rolling Guide</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (71)</div>
+                        <p>The 12 self-massage movements that matter most for runners.</p>
+                        <div class="product-footer"><span class="product-price">$19</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="recovery">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Guide</span>
+                        <h4>Race Week Guide</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (34)</div>
+                        <p>Taper, fueling, and logistics checklist for race week.</p>
+                        <div class="product-footer"><span class="product-price">$15</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="recovery">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Guide</span>
+                        <h4>Recovery Guide</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (58)</div>
+                        <p>Sleep, HRV, soreness, and load-management basics for runners.</p>
+                        <div class="product-footer"><span class="product-price">$19</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="recovery">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Guide</span>
+                        <h4>Nutrition Guide for Runners</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (46)</div>
+                        <p>Fueling basics for training blocks, long runs, and race day.</p>
+                        <div class="product-footer"><span class="product-price">$25</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="recovery">
+                    <div class="product-thumb"><span class="product-badge">New</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Video Course</span>
+                        <h4>Running Form Video Course</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (22)</div>
+                        <p>Video breakdowns of cadence, posture, and foot strike for runners.</p>
+                        <div class="product-footer"><span class="product-price">$59</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Physical Store -->
+    <section class="section section-dark" id="store">
+        <div class="container">
+            <div class="section-head" style="text-align:left; margin-bottom:36px; max-width:none;">
+                <span class="eyebrow">Physical Store</span>
+                <h2>Recovery Tools &amp; Running Accessories</h2>
+            </div>
+            <div class="shop-toolbar">
+                <div class="filter-group" data-scope="store">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="gear">Recovery Tools</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    <button class="filter-btn" data-filter="fuel">Nutrition</button>
+                    <button class="filter-btn" data-filter="gift">Gift Cards</button>
+                </div>
+                <span class="form-note" style="margin:0; color:var(--gray-400);">10 products</span>
+            </div>
+            <div class="product-grid">
+                <div class="product-card fade-in" data-category="gear">
+                    <div class="product-thumb"><span class="product-badge">Bestseller</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="9" width="20" height="6" rx="3"></rect></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Recovery Tools</span>
+                        <h4>Textured Foam Roller</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (210)</div>
+                        <p>High-density roller for IT band, quads, and calves.</p>
+                        <div class="product-footer"><span class="product-price">$38</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="gear">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="7"></circle></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Recovery Tools</span>
+                        <h4>Massage Ball Set</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (145)</div>
+                        <p>Two densities for glutes, feet, and shoulders.</p>
+                        <div class="product-footer"><span class="product-price">$22</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="gear">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"></circle></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Recovery Tools</span>
+                        <h4>Lacrosse Ball Duo</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.6 (98)</div>
+                        <p>Firm-density balls for pinpoint trigger-point work.</p>
+                        <div class="product-footer"><span class="product-price">$14</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="gear">
+                    <div class="product-thumb"><span class="product-badge">Premium</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="3"></rect></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Recovery Tools</span>
+                        <h4>Percussion Massage Gun</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (67)</div>
+                        <p>Quiet-drive percussion device with 5 interchangeable heads.</p>
+                        <div class="product-footer"><span class="product-price">$149</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="accessories">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M4 12a4 4 0 1 1 8 0M20 12a4 4 0 1 0-8 0"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Accessories</span>
+                        <h4>Mini Resistance Bands (Set of 3)</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.8 (176)</div>
+                        <p>Light / medium / heavy loop bands for warm-ups and activation.</p>
+                        <div class="product-footer"><span class="product-price">$18</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="accessories">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Accessories</span>
+                        <h4>Long Resistance Band</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.6 (54)</div>
+                        <p>Full-body mobility and strength band, 3 resistance levels.</p>
+                        <div class="product-footer"><span class="product-price">$24</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="fuel">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M8 5h8"></path><path d="M6 9h12l-1.5 12a2 2 0 0 1-2 1.8H9.5a2 2 0 0 1-2-1.8L6 9z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Nutrition</span>
+                        <h4>Electrolyte Mix (30 servings)</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.7 (132)</div>
+                        <p>Low-sugar electrolyte formula for long runs and hot-weather racing.</p>
+                        <div class="product-footer"><span class="product-price">$32</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="fuel">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"></rect></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Books</span>
+                        <h4>The Groundwork Method (Book)</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.9 (19)</div>
+                        <p>The strength-and-recovery philosophy behind the coaching, in print.</p>
+                        <div class="product-footer"><span class="product-price">$28</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="accessories">
+                    <div class="product-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Accessories</span>
+                        <h4>Compression Recovery Sleeves</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 4.5 (61)</div>
+                        <p>Graduated compression for post-run and travel recovery.</p>
+                        <div class="product-footer"><span class="product-price">$36</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+                <div class="product-card fade-in" data-category="gift">
+                    <div class="product-thumb"><span class="product-badge">Popular</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="13" rx="2"></rect><path d="M12 8v13M3 12h18"></path><path d="M12 8c-2 0-4-1-4-3a2 2 0 0 1 4 0 2 2 0 0 1 4 0c0 2-2 3-4 3z"></path></svg></div>
+                    <div class="product-body">
+                        <span class="product-category">Gift Card</span>
+                        <h4>Groundwork Gift Card</h4>
+                        <div class="product-rating"><span class="stars">★★★★★</span> 5.0 (11)</div>
+                        <p>Redeemable toward coaching, massage sessions, or the store.</p>
+                        <div class="product-footer"><span class="product-price">$25–$250</span><button class="add-to-cart" aria-label="Add to cart">+</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <span>&copy; 2026 Groundwork. All rights reserved.</span>
+                <span>Toronto, Ontario</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart drawer — UI preview only, no live checkout/payments wired up -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-head">
+            <h4>Your Cart</h4>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+        </div>
+        <div class="cart-drawer-body">
+            <p class="cart-drawer-note">This is a UI preview. Stripe Checkout, taxes, coupons, and order history are not connected yet — nothing here is a real purchase.</p>
+        </div>
+        <div class="cart-drawer-foot">
+            <button class="btn btn-primary btn-block" disabled>Checkout — Coming Soon</button>
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
