@@ -273,9 +273,9 @@ document.addEventListener('DOMContentLoaded', () => {
         help: 'Available commands: help, services, pricing, contact, about, portfolio, whoami, sudo, matrix, clear',
         services: 'Services: Web Design & Dev · SEO · Paid Advertising · Brand Identity · AI Automation · Growth Analytics',
         pricing: 'Plans: Starter ($1,500/mo) · Growth ($3,800/mo) · Enterprise (custom). See the pricing section above.',
-        about: 'Cipher Labs — digital creative agency. 8+ years running, 180+ launches, $120M+ client revenue driven.',
+        about: 'Mustard — digital creative agency. 8+ years running, 180+ launches, $120M+ client revenue driven.',
         portfolio: 'Recent launches: Bloom & Co., TechVault SaaS, GreenPlate Meals, Northline Studio, Orbital Finance.',
-        contact: 'Reach us at hello@cipherlabs.io or fill out the form to your right.',
+        contact: 'Reach us at hello@mustard.io or fill out the form to your right.',
         whoami: 'guest — curious visitor exploring the matrix.',
         sudo: 'Nice try. Access denied. This incident will be logged.',
         matrix: 'Wake up... the matrix has you. Try the Konami code: ↑↑↓↓←→←→BA',
@@ -309,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (cmd.includes('web') || cmd.includes('site')) {
                 printLine('We build custom, high-performance websites engineered to convert.', 't-resp');
             } else if (cmd.includes('hello') || cmd.includes('hi')) {
-                printLine('Hello, guest. How can Cipher Labs help you grow today?', 't-accent');
+                printLine('Hello, guest. How can Mustard help you grow today?', 't-accent');
             } else {
                 printLine(`Command not recognized: "${raw}". Type "help" for options.`, 't-resp');
             }

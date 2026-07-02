@@ -4,14 +4,14 @@ This file provides guidance for AI assistants working in this repository.
 
 ## Project Overview
 
-CC-Studio is a marketing agency project hosting client landing pages. The first client site is **Cipher Labs** — a digital creative agency specializing in web design, SEO, paid advertising, brand identity, and AI automation, with a Matrix-inspired cyberpunk visual identity ("We Build Digital Realities.").
+CC-Studio is a marketing agency project hosting client landing pages. The first client site is **Mustard** — a digital creative agency specializing in web design, SEO, paid advertising, brand identity, and AI automation, with a Matrix-inspired cyberpunk visual identity ("We Build Digital Realities.").
 
 ## Repository Structure
 
 ```
 CC-Studio/
 ├── CLAUDE.md          # AI assistant guidance (this file)
-├── index.html         # Cipher Labs landing page
+├── index.html         # Mustard landing page
 ├── styles.css         # All styles (responsive, mobile-first)
 ├── script.js          # Interactivity (nav, matrix rain, terminal, animations, form handling)
 └── assets/
@@ -36,7 +36,7 @@ No install commands, environment variables, or databases are needed.
 
 ## Landing Page Sections
 
-The Cipher Labs landing page includes:
+The Mustard landing page includes:
 
 | Section | Description |
 |---------|-------------|
@@ -44,7 +44,7 @@ The Cipher Labs landing page includes:
 | Hero | Matrix rain canvas background, headline, stats counter, CTAs |
 | Marquee | Infinite-scroll ticker of capabilities |
 | Services | 6-card grid: Web Design, SEO (featured), Paid Ads, Branding, AI Automation, Analytics |
-| About | Why Cipher Labs — features with icons, terminal-style stat panel |
+| About | Why Mustard — features with icons, terminal-style stat panel |
 | Process | 4-step horizontal flow: Discovery, Strategy, Execute, Optimize |
 | Portfolio | 6 project cards with category filters and metrics |
 | Testimonials | 3 client review cards with star ratings |

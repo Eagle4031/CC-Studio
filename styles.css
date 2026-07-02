@@ -331,11 +331,6 @@ section {
     filter: drop-shadow(0 0 6px rgba(0, 255, 136, 0.6));
 }
 
-.logo-sub {
-    color: var(--neon-green);
-    font-weight: 700;
-}
-
 .nav-links {
     display: flex;
     align-items: center;

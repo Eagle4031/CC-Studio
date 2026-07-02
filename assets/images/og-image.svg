@@ -16,6 +16,6 @@
   <rect width="1200" height="630" fill="url(#grid)"/>
   <path d="M120 240 L200 200 L280 240 V340 L200 380 L120 340 Z" fill="none" stroke="#00ff88" stroke-width="4"/>
   <circle cx="200" cy="290" r="18" fill="#00ff88"/>
-  <text x="360" y="300" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700" fill="#eafff2">CIPHER LABS</text>
+  <text x="360" y="300" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700" fill="#eafff2">MUSTARD</text>
   <text x="360" y="360" font-family="monospace" font-size="30" fill="url(#txt)">We Build Digital Realities.</text>
 </svg>
