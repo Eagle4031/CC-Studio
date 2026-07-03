@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020202"/>
+      <stop offset="100%" stop-color="#0d100e"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ff88" stroke-opacity="0.08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <path d="M120 240 L200 200 L280 240 V340 L200 380 L120 340 Z" fill="none" stroke="#00ff88" stroke-width="4"/>
+  <circle cx="200" cy="290" r="18" fill="#00ff88"/>
+  <text x="360" y="300" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700" fill="#eafff2">MUSTARD</text>
+  <text x="360" y="360" font-family="monospace" font-size="30" fill="url(#txt)">We Build Digital Realities.</text>
+</svg>

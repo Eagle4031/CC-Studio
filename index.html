@@ -3,20 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustard Digital Marketing | Websites, SEO & Digital Ads</title>
-    <meta name="description" content="Mustard Digital Marketing helps businesses grow with stunning websites, data-driven SEO, and high-converting digital ad campaigns.">
+    <title>Mustard | We Build Digital Realities</title>
+    <meta name="description" content="Mustard is a digital creative agency fusing AI, design, and growth marketing — websites, SEO, brand strategy, and automation for brands that want to be impossible to ignore.">
+    <meta name="theme-color" content="#020202">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mustard | We Build Digital Realities">
+    <meta property="og:description" content="AI-powered design, SEO, and growth marketing for brands that want to be impossible to ignore.">
+    <meta property="og:image" content="assets/images/og-image.svg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mustard | We Build Digital Realities">
+    <meta name="twitter:description" content="AI-powered design, SEO, and growth marketing for brands that want to be impossible to ignore.">
+    <meta name="twitter:image" content="assets/images/og-image.svg">
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Mustard",
+      "description": "Digital creative agency specializing in AI-powered design, SEO, and growth marketing.",
+      "slogan": "We Build Digital Realities.",
+      "sameAs": []
+    }
+    </script>
 </head>
 <body>
+
+    <canvas id="matrixRain" aria-hidden="true"></canvas>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+    <div class="secret-overlay" id="secretOverlay">
+        <p>WAKE UP, NEO...<br>THE MATRIX HAS YOU.<br><span class="mono" style="font-size:0.9rem;opacity:0.7;">follow the white rabbit — press ESC to return</span></p>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <span class="logo-icon">&#9679;</span> Mustard
+                <svg class="logo-mark" width="30" height="30" viewBox="0 0 64 64" fill="none">
+                    <path d="M32 8 L54 20 V44 L32 56 L10 44 V20 Z" stroke="#00ff88" stroke-width="4"/>
+                    <circle cx="32" cy="32" r="7" fill="#00ff88"/>
+                </svg>
+                MUSTARD
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <span></span>
@@ -25,10 +63,11 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Our Work</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#contact" class="btn btn-nav">Get Started</a></li>
+                <li><a href="#contact" class="btn btn-nav">Start Project</a></li>
             </ul>
         </div>
     </nav>
@@ -36,172 +75,237 @@
     <!-- Hero Section -->
     <header class="hero" id="hero">
         <div class="container hero-container">
-            <div class="hero-content">
-                <span class="hero-tag">Digital Marketing Agency</span>
-                <h1>We Help Brands <span class="text-highlight">Cut Through</span> the Noise</h1>
-                <p class="hero-description">Mustard Digital Marketing delivers bold websites, search-dominating SEO, and ad campaigns that convert. We bring the heat so your brand gets noticed.</p>
-                <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                    <a href="#services" class="btn btn-outline">Explore Services</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
-                        <span class="stat-label">Projects Delivered</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
-                        <span class="stat-label">Client Retention</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number" data-target="3">0</span><span class="stat-suffix">x</span>
-                        <span class="stat-label">Avg. ROI Increase</span>
-                    </div>
-                </div>
+            <span class="hero-badge"><span class="dot"></span> SYSTEM ONLINE — ACCEPTING NEW PROJECTS</span>
+            <h1>We Build Digital<br><span class="text-gradient">Realities</span><span class="cursor-blink">&nbsp;</span></h1>
+            <p class="hero-description">Mustard transforms brands using AI, design, and growth marketing. We don't build websites — we build the digital reality your customers live inside.</p>
+            <div class="hero-ctas">
+                <a href="#contact" class="btn btn-primary magnetic">Start a Project</a>
+                <a href="#contact" class="btn btn-outline magnetic">Book a Demo</a>
+                <a href="#work" class="btn btn-ghost magnetic">Watch Showreel &rarr;</a>
             </div>
-            <div class="hero-visual">
-                <div class="hero-graphic">
-                    <div class="graphic-card card-1">
-                        <div class="mini-chart">
-                            <div class="bar" style="height: 40%"></div>
-                            <div class="bar" style="height: 60%"></div>
-                            <div class="bar" style="height: 45%"></div>
-                            <div class="bar" style="height: 80%"></div>
-                            <div class="bar" style="height: 65%"></div>
-                            <div class="bar" style="height: 95%"></div>
-                        </div>
-                        <span class="card-label">Traffic Growth</span>
-                        <span class="card-value up">+147%</span>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number-wrap">
+                        <span class="stat-number" data-target="180">0</span><span class="stat-suffix">+</span>
                     </div>
-                    <div class="graphic-card card-2">
-                        <div class="conversion-ring">
-                            <svg viewBox="0 0 80 80">
-                                <circle cx="40" cy="40" r="35" stroke="#e5e7eb" stroke-width="6" fill="none"/>
-                                <circle cx="40" cy="40" r="35" stroke="#D4A017" stroke-width="6" fill="none"
-                                    stroke-dasharray="176" stroke-dashoffset="44" stroke-linecap="round"
-                                    transform="rotate(-90 40 40)"/>
-                            </svg>
-                            <span class="ring-value">75%</span>
-                        </div>
-                        <span class="card-label">Conversion Rate</span>
+                    <span class="stat-label">Projects Shipped</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number-wrap">
+                        <span class="stat-number" data-target="97">0</span><span class="stat-suffix">%</span>
                     </div>
-                    <div class="graphic-card card-3">
-                        <span class="card-emoji">&#128640;</span>
-                        <span class="card-label">SEO Rank</span>
-                        <span class="card-value up">#1</span>
+                    <span class="stat-label">Client Retention</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number-wrap">
+                        <span class="stat-number" data-target="4">0</span><span class="stat-suffix">x</span>
                     </div>
+                    <span class="stat-label">Avg. ROI Increase</span>
+                </div>
+                <div class="stat">
+                    <div class="stat-number-wrap">
+                        <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+                    </div>
+                    <span class="stat-label">AI-Assisted Support</span>
                 </div>
             </div>
         </div>
-        <div class="hero-bg-shape"></div>
+        <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
     </header>
+
+    <!-- Marquee -->
+    <div class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+            <span>AI AUTOMATION</span><span>SEO</span><span>BRAND STRATEGY</span><span>WEB DESIGN</span><span>PAID MEDIA</span><span>CRO</span><span>CHATBOTS</span><span>CONTENT ENGINES</span>
+            <span>AI AUTOMATION</span><span>SEO</span><span>BRAND STRATEGY</span><span>WEB DESIGN</span><span>PAID MEDIA</span><span>CRO</span><span>CHATBOTS</span><span>CONTENT ENGINES</span>
+        </div>
+    </div>
 
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">What We Do</span>
-                <h2>Services That <span class="text-highlight">Drive Results</span></h2>
-                <p>We combine creative design with data-driven strategy to deliver marketing that works.</p>
+                <h2>Services Built for <span class="text-gradient">Compounding Growth</span></h2>
+                <p>We fuse strategy, design, and automation into systems that keep working after the project ends.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card reveal">
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
                             <line x1="8" y1="21" x2="16" y2="21"></line>
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
                     <h3>Web Design & Development</h3>
-                    <p>Custom-built, responsive websites that look stunning and convert visitors into customers. From landing pages to full e-commerce platforms.</p>
+                    <p>Custom-built, high-performance sites engineered to convert — not just look good in a portfolio.</p>
                     <ul class="service-features">
                         <li>Custom UI/UX Design</li>
-                        <li>Mobile-First Development</li>
-                        <li>E-Commerce Solutions</li>
-                        <li>CMS Integration</li>
+                        <li>Headless & JAMstack Builds</li>
+                        <li>E-Commerce Systems</li>
+                        <li>Performance Engineering</li>
                     </ul>
                 </div>
-                <div class="service-card featured">
-                    <span class="featured-badge">Most Popular</span>
+                <div class="service-card featured reveal">
+                    <span class="featured-badge">Most Requested</span>
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             <line x1="11" y1="8" x2="11" y2="14"></line>
                             <line x1="8" y1="11" x2="14" y2="11"></line>
                         </svg>
                     </div>
-                    <h3>Search Engine Optimization</h3>
-                    <p>Dominate search results with our proven SEO strategies. We drive organic traffic that compounds month over month.</p>
+                    <h3>SEO & Organic Growth</h3>
+                    <p>Search dominance through technical precision and content that compounds month over month.</p>
                     <ul class="service-features">
                         <li>Technical SEO Audits</li>
-                        <li>Keyword Strategy</li>
-                        <li>Content Optimization</li>
-                        <li>Link Building</li>
+                        <li>Keyword & Content Strategy</li>
+                        <li>Programmatic SEO</li>
+                        <li>Link Authority Building</li>
                     </ul>
                 </div>
-                <div class="service-card">
+                <div class="service-card reveal">
                     <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                         </svg>
                     </div>
-                    <h3>Digital Advertising</h3>
-                    <p>High-performing ad campaigns across Google, Meta, and more. We maximize every dollar of your ad spend for real results.</p>
+                    <h3>Paid Advertising</h3>
+                    <p>Google, Meta, and TikTok campaigns engineered to squeeze maximum ROI from every dollar spent.</p>
                     <ul class="service-features">
-                        <li>Google Ads (PPC)</li>
-                        <li>Social Media Ads</li>
-                        <li>Retargeting Campaigns</li>
-                        <li>Analytics & Reporting</li>
+                        <li>Google & YouTube Ads</li>
+                        <li>Meta & TikTok Campaigns</li>
+                        <li>Retargeting Funnels</li>
+                        <li>Real-Time Analytics</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                            <path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"></path>
+                        </svg>
+                    </div>
+                    <h3>Brand Identity</h3>
+                    <p>Naming, logo systems, and visual language that make a brand instantly recognizable and unforgettable.</p>
+                    <ul class="service-features">
+                        <li>Brand Strategy</li>
+                        <li>Logo & Identity Systems</li>
+                        <li>Design Guidelines</li>
+                        <li>Visual Storytelling</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M12 7v4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16"></line>
+                            <line x1="16" y1="16" x2="16" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3>AI Automation & Chatbots</h3>
+                    <p>Custom AI assistants and workflow automation that handle lead qualification while your team sleeps.</p>
+                    <ul class="service-features">
+                        <li>AI Chat & Support Agents</li>
+                        <li>CRM & Sales Automation</li>
+                        <li>Content Generation Pipelines</li>
+                        <li>Lead Scoring Systems</li>
+                    </ul>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Growth Analytics</h3>
+                    <p>Dashboards and reporting that turn raw data into decisions — no more guessing what's working.</p>
+                    <ul class="service-features">
+                        <li>Conversion Rate Optimization</li>
+                        <li>Custom Dashboards</li>
+                        <li>Attribution Modeling</li>
+                        <li>Monthly Growth Reports</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About / Why Us Section -->
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="container about-container">
-            <div class="about-content">
-                <span class="section-tag">Why Mustard?</span>
-                <h2>Bold Flavor. <span class="text-highlight">Real Results.</span></h2>
-                <p class="about-description">We're not your average marketing agency. Mustard was founded on the belief that marketing should be bold, measurable, and impossible to ignore — just like our name.</p>
+            <div class="about-content reveal">
+                <span class="section-tag">Why Mustard</span>
+                <h2>Enter the <span class="text-gradient">Signal.</span> Exit the Noise.</h2>
+                <p class="about-description">Most agencies sell hours. We build systems — websites, campaigns, and automations that keep compounding long after the invoice is paid. Every decision is backed by data, every deliverable built to scale.</p>
                 <div class="about-features">
                     <div class="about-feature">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
                         </div>
                         <div>
-                            <h4>Data-Driven Decisions</h4>
-                            <p>Every strategy is backed by analytics. We measure, iterate, and optimize relentlessly.</p>
+                            <h4>Data-Driven, Always</h4>
+                            <p>Every strategy is instrumented and measured. We iterate on evidence, not opinion.</p>
                         </div>
                     </div>
                     <div class="about-feature">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                         </div>
                         <div>
-                            <h4>Dedicated Team</h4>
-                            <p>You get a team of specialists — not a revolving door of freelancers.</p>
+                            <h4>A Dedicated Pod</h4>
+                            <p>A fixed team of strategists, designers, and engineers — never a revolving door of freelancers.</p>
                         </div>
                     </div>
                     <div class="about-feature">
                         <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
                         </div>
                         <div>
-                            <h4>Transparent Reporting</h4>
-                            <p>Monthly reports with clear KPIs. You always know where your investment goes.</p>
+                            <h4>Radical Transparency</h4>
+                            <p>Live dashboards and monthly reporting. You always know exactly where your investment goes.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="about-visual">
-                <div class="about-image-placeholder">
-                    <div class="placeholder-content">
-                        <span class="placeholder-number">10+</span>
-                        <span class="placeholder-text">Years of<br>Experience</span>
+            <div class="about-visual reveal">
+                <div class="terminal-panel">
+                    <div class="terminal-titlebar">
+                        <span></span><span></span><span></span>
+                        <span class="terminal-path">~/mustard/status</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="line-prompt">$ whoami</p>
+                        <p class="line-out">mustard — digital creative agency</p>
+                        <p class="line-prompt">$ status --check</p>
+                        <p class="line-ok">&#10003; strategy pod: online</p>
+                        <p class="line-ok">&#10003; design pod: online</p>
+                        <p class="line-ok">&#10003; growth pod: online</p>
+                        <p class="line-muted">// est. 2018 — 180+ launches since</p>
+                    </div>
+                    <div class="about-stat-grid">
+                        <div class="about-stat">
+                            <div class="num">8+</div>
+                            <div class="label">Years Running</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="num">40+</div>
+                            <div class="label">Team Members</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="num">12</div>
+                            <div class="label">Industries Served</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="num">$120M+</div>
+                            <div class="label">Client Revenue Driven</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,36 +313,36 @@
     </section>
 
     <!-- Process Section -->
-    <section class="process">
+    <section class="process" id="process">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">How We Work</span>
-                <h2>Our Proven <span class="text-highlight">Process</span></h2>
-                <p>From discovery to launch and beyond, we follow a battle-tested process.</p>
+                <h2>A Proven <span class="text-gradient">Process</span></h2>
+                <p>From discovery to launch and beyond, we run a battle-tested playbook.</p>
             </div>
             <div class="process-steps">
-                <div class="process-step">
+                <div class="process-step reveal">
                     <div class="step-number">01</div>
                     <h3>Discovery</h3>
-                    <p>We learn your business, audience, and goals inside and out.</p>
+                    <p>We audit your brand, market, and data to find the highest-leverage opportunities.</p>
                 </div>
                 <div class="process-connector"></div>
-                <div class="process-step">
+                <div class="process-step reveal">
                     <div class="step-number">02</div>
                     <h3>Strategy</h3>
-                    <p>We craft a tailored plan with clear milestones and KPIs.</p>
+                    <p>We craft a tailored roadmap with clear milestones, KPIs, and ownership.</p>
                 </div>
                 <div class="process-connector"></div>
-                <div class="process-step">
+                <div class="process-step reveal">
                     <div class="step-number">03</div>
                     <h3>Execute</h3>
-                    <p>Our specialists bring the strategy to life with precision.</p>
+                    <p>Our specialists build, launch, and ship — fast, and without cutting corners.</p>
                 </div>
                 <div class="process-connector"></div>
-                <div class="process-step">
+                <div class="process-step reveal">
                     <div class="step-number">04</div>
                     <h3>Optimize</h3>
-                    <p>We continuously refine based on real performance data.</p>
+                    <p>We monitor real performance data and continuously refine for compounding gains.</p>
                 </div>
             </div>
         </div>
@@ -247,37 +351,94 @@
     <!-- Work / Portfolio Section -->
     <section class="work" id="work">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Portfolio</span>
-                <h2>Work That <span class="text-highlight">Speaks</span></h2>
-                <p>A selection of projects where we delivered measurable impact.</p>
+                <h2>Work That <span class="text-gradient">Moves the Needle</span></h2>
+                <p>A selection of projects where we delivered measurable, compounding impact.</p>
+            </div>
+            <div class="work-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="growth">Growth</button>
             </div>
             <div class="work-grid">
-                <div class="work-card">
-                    <div class="work-image" style="background: linear-gradient(135deg, #D4A017 0%, #b8860b 100%);">
+                <div class="work-card reveal" data-category="web growth">
+                    <div class="work-image" style="background: linear-gradient(135deg, #063d2a 0%, #00ff88 140%);">
                         <span class="work-category">Website + SEO</span>
                     </div>
                     <div class="work-info">
                         <h3>Bloom & Co.</h3>
-                        <p>E-commerce redesign that increased organic traffic by 210% and boosted sales by 85%.</p>
+                        <p>E-commerce rebuild that turned an aging storefront into a search-dominant growth engine.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">+210%</span><span class="lbl">Organic Traffic</span></div>
+                            <div class="work-metric"><span class="val">+85%</span><span class="lbl">Revenue</span></div>
+                        </div>
                     </div>
                 </div>
-                <div class="work-card">
-                    <div class="work-image" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
-                        <span class="work-category">Digital Ads</span>
+                <div class="work-card reveal" data-category="growth">
+                    <div class="work-image" style="background: linear-gradient(135deg, #021a2e 0%, #00e5ff 140%);">
+                        <span class="work-category">Paid Media</span>
                     </div>
                     <div class="work-info">
                         <h3>TechVault SaaS</h3>
-                        <p>PPC campaign that reduced cost-per-acquisition by 62% while scaling leads 3x.</p>
+                        <p>Full-funnel PPC rebuild that cut acquisition costs while scaling qualified pipeline.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">-62%</span><span class="lbl">CPA</span></div>
+                            <div class="work-metric"><span class="val">3x</span><span class="lbl">Leads</span></div>
+                        </div>
                     </div>
                 </div>
-                <div class="work-card">
-                    <div class="work-image" style="background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);">
+                <div class="work-card reveal" data-category="branding web">
+                    <div class="work-image" style="background: linear-gradient(135deg, #1a0533 0%, #b026ff 140%);">
                         <span class="work-category">Full Service</span>
                     </div>
                     <div class="work-info">
                         <h3>GreenPlate Meals</h3>
-                        <p>Brand launch with website, SEO, and ads — 10,000 subscribers in the first 90 days.</p>
+                        <p>Brand launch from zero — identity, website, SEO, and ads shipped in a single sprint.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">10K</span><span class="lbl">Subscribers / 90d</span></div>
+                            <div class="work-metric"><span class="val">4.2x</span><span class="lbl">ROI</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal" data-category="branding">
+                    <div class="work-image" style="background: linear-gradient(135deg, #071a12 0%, #00ffc8 140%);">
+                        <span class="work-category">Brand Identity</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>Northline Studio</h3>
+                        <p>Full rebrand and design system for a creative studio scaling into new markets.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">+340%</span><span class="lbl">Brand Recall</span></div>
+                            <div class="work-metric"><span class="val">18</span><span class="lbl">New Enterprise Clients</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal" data-category="web">
+                    <div class="work-image" style="background: linear-gradient(135deg, #051022 0%, #2e6bff 140%);">
+                        <span class="work-category">Web Platform</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>Orbital Finance</h3>
+                        <p>A headless, edge-rendered platform migration that cut load times to under a second.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">0.9s</span><span class="lbl">Load Time</span></div>
+                            <div class="work-metric"><span class="val">+58%</span><span class="lbl">Conversion Rate</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-card reveal" data-category="growth branding">
+                    <div class="work-image" style="background: linear-gradient(135deg, #241004 0%, #ff8f00 140%);">
+                        <span class="work-category">AI Automation</span>
+                    </div>
+                    <div class="work-info">
+                        <h3>Havenwood Realty</h3>
+                        <p>An AI lead-qualification chatbot and CRM automation layer built on top of the existing site.</p>
+                        <div class="work-metrics">
+                            <div class="work-metric"><span class="val">-71%</span><span class="lbl">Response Time</span></div>
+                            <div class="work-metric"><span class="val">+45%</span><span class="lbl">Qualified Leads</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -287,14 +448,14 @@
     <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <span class="section-tag">Testimonials</span>
-                <h2>What Our Clients <span class="text-highlight">Say</span></h2>
+                <h2>What Our Clients <span class="text-gradient">Say</span></h2>
             </div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal">
                     <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"Mustard completely transformed our online presence. Our website traffic tripled in 6 months and leads are coming in daily. Best investment we've made."</p>
+                    <p>"Mustard completely transformed our online presence. Our traffic tripled in six months and qualified leads come in daily. Best investment we've made."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">JR</div>
                         <div>
@@ -303,9 +464,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal">
                     <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"Their ad campaigns are surgical. We cut our ad spend by 40% and still doubled conversions. The team is incredibly responsive and transparent."</p>
+                    <p>"Their campaigns are surgical. We cut ad spend by 40% and still doubled conversions. The team is sharp, fast, and refreshingly transparent."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">MK</div>
                         <div>
@@ -314,9 +475,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card reveal">
                     <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <p>"From day one, Mustard felt like an extension of our team. They took the time to understand our vision and delivered beyond expectations."</p>
+                    <p>"From day one, Mustard felt like an extension of our team. They understood our vision instantly and shipped beyond what we imagined."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">SL</div>
                         <div>
@@ -329,13 +490,79 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Pricing</span>
+                <h2>Simple Plans. <span class="text-gradient">Serious Results.</span></h2>
+                <p>Transparent packages that scale with your business. No hidden retainers, no surprise invoices.</p>
+            </div>
+            <div class="pricing-toggle reveal">
+                <span>Monthly</span>
+                <div class="toggle-switch" id="pricingToggle"><div class="knob"></div></div>
+                <span>Yearly</span>
+                <span class="pricing-save">Save 20%</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal">
+                    <div class="pricing-name">Starter</div>
+                    <div class="pricing-price">
+                        <span class="amount"><span data-monthly="1500" data-yearly="1200">$1,500</span></span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <p class="pricing-desc">For new brands that need a strong, credible foundation online.</p>
+                    <ul class="pricing-features">
+                        <li>5-page custom website</li>
+                        <li>Foundational SEO setup</li>
+                        <li>Monthly performance report</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+                </div>
+                <div class="pricing-card featured reveal">
+                    <span class="featured-badge">Most Popular</span>
+                    <div class="pricing-name">Growth</div>
+                    <div class="pricing-price">
+                        <span class="amount"><span data-monthly="3800" data-yearly="3040">$3,800</span></span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <p class="pricing-desc">For scaling businesses ready to compound traffic, leads, and revenue.</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Starter</li>
+                        <li>Full SEO & content engine</li>
+                        <li>Paid media management</li>
+                        <li>AI chatbot & lead automation</li>
+                        <li>Dedicated strategist</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
+                </div>
+                <div class="pricing-card reveal">
+                    <div class="pricing-name">Enterprise</div>
+                    <div class="pricing-price">
+                        <span class="amount">Custom</span>
+                    </div>
+                    <p class="pricing-desc">For organizations that need a full-stack growth and automation partner.</p>
+                    <ul class="pricing-features">
+                        <li>Everything in Growth</li>
+                        <li>Custom AI & CRM builds</li>
+                        <li>Multi-market strategy</li>
+                        <li>Dedicated pod + Slack channel</li>
+                        <li>Quarterly on-site reviews</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-full">Talk to Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <div class="cta-box">
-                <h2>Ready to Add Some <span class="text-highlight">Mustard</span> to Your Marketing?</h2>
-                <p>Let's talk about how we can grow your business. Free consultation, no strings attached.</p>
-                <a href="#contact" class="btn btn-primary btn-lg">Book a Free Consultation</a>
+            <div class="cta-box reveal">
+                <h2>Ready to Enter <span class="text-gradient">the Signal?</span></h2>
+                <p>Let's talk about how we can grow your business. Free strategy call, no strings attached.</p>
+                <a href="#contact" class="btn btn-primary btn-lg magnetic">Book a Free Strategy Call</a>
             </div>
         </div>
     </section>
@@ -343,26 +570,39 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container contact-container">
-            <div class="contact-info">
+            <div class="contact-info reveal">
                 <span class="section-tag">Get In Touch</span>
-                <h2>Let's Build Something <span class="text-highlight">Great</span></h2>
-                <p>Fill out the form and we'll get back to you within 24 hours with a tailored game plan for your business.</p>
+                <h2>Let's Build Something <span class="text-gradient">Real</span></h2>
+                <p>Fill out the form, or talk to our terminal — either way, we'll get back to you within 24 hours with a tailored game plan.</p>
                 <div class="contact-details">
                     <div class="contact-item">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <span>hello@mustarddigital.com</span>
+                        <span>hello@mustard.io</span>
                     </div>
                     <div class="contact-item">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        <span>(555) 123-4567</span>
+                        <span>(512) 555-0187</span>
                     </div>
                     <div class="contact-item">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        <span>123 Marketing Ave, Suite 200<br>Austin, TX 78701</span>
+                        <span>1201 Quantum Row, Austin, TX 78701</span>
+                    </div>
+                </div>
+                <div class="contact-terminal">
+                    <div class="terminal-titlebar">
+                        <span></span><span></span><span></span>
+                        <span class="terminal-path">guest@mustard:~$</span>
+                    </div>
+                    <div class="terminal-output" id="terminalOutput">
+                        <p class="t-resp">Mustard terminal v1.0 — type <span class="t-accent">help</span> to see available commands.</p>
+                    </div>
+                    <div class="terminal-input-row">
+                        <span class="prompt-char">&gt;</span>
+                        <input type="text" id="terminalInput" placeholder="type a command..." autocomplete="off" spellcheck="false" aria-label="Terminal command input">
                     </div>
                 </div>
             </div>
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form reveal" id="contactForm">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Full Name</label>
@@ -378,8 +618,10 @@
                     <select id="service" name="service" required>
                         <option value="" disabled selected>Select a service</option>
                         <option value="web-design">Web Design & Development</option>
-                        <option value="seo">Search Engine Optimization</option>
-                        <option value="digital-ads">Digital Advertising</option>
+                        <option value="seo">SEO & Organic Growth</option>
+                        <option value="paid-ads">Paid Advertising</option>
+                        <option value="branding">Brand Identity</option>
+                        <option value="ai-automation">AI Automation & Chatbots</option>
                         <option value="full-service">Full Service Package</option>
                     </select>
                 </div>
@@ -387,7 +629,7 @@
                     <label for="budget">Monthly Budget</label>
                     <select id="budget" name="budget">
                         <option value="" disabled selected>Select your budget range</option>
-                        <option value="1k-3k">$1,000 - $3,000</option>
+                        <option value="1k-3k">$1,500 - $3,000</option>
                         <option value="3k-5k">$3,000 - $5,000</option>
                         <option value="5k-10k">$5,000 - $10,000</option>
                         <option value="10k+">$10,000+</option>
@@ -397,7 +639,7 @@
                     <label for="message">Tell Us About Your Project</label>
                     <textarea id="message" name="message" rows="4" placeholder="What are your goals? Any specific challenges you're facing?"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                <button type="submit" class="btn btn-primary btn-full">Send Transmission</button>
             </form>
         </div>
     </section>
@@ -408,17 +650,26 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#" class="logo">
-                        <span class="logo-icon">&#9679;</span> Mustard
+                        <svg class="logo-mark" width="26" height="26" viewBox="0 0 64 64" fill="none">
+                            <path d="M32 8 L54 20 V44 L32 56 L10 44 V20 Z" stroke="#00ff88" stroke-width="4"/>
+                            <circle cx="32" cy="32" r="7" fill="#00ff88"/>
+                        </svg>
+                        MUSTARD
                     </a>
-                    <p>Bold marketing that gets results. We help businesses cut through the digital noise and grow.</p>
+                    <p>A digital creative agency fusing AI, design, and growth marketing for brands that refuse to blend in.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Instagram">ig</a>
+                        <a href="#" aria-label="Twitter / X">x</a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
                         <li><a href="#services">Web Design</a></li>
                         <li><a href="#services">SEO</a></li>
-                        <li><a href="#services">Digital Ads</a></li>
-                        <li><a href="#contact">Consulting</a></li>
+                        <li><a href="#services">Paid Advertising</a></li>
+                        <li><a href="#services">AI Automation</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -426,7 +677,7 @@
                     <ul>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#work">Portfolio</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -436,12 +687,12 @@
                         <li><a href="#">LinkedIn</a></li>
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">Twitter / X</a></li>
-                        <li><a href="#">Facebook</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Mustard Digital Marketing. All rights reserved.</p>
+                <p>&copy; 2026 Mustard. All rights reserved.</p>
+                <p class="easter-hint">// try the konami code</p>
             </div>
         </div>
     </footer>
